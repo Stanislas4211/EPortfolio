@@ -1,34 +1,48 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}EPortfolio{% endblock %}
+{% block title %}EPortfolio Favier Stanislas{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #a5c4d6ff; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <div class="card border-success mb-3" style="max-width: 20rem;">
-        <div class="card-header"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">En-tête</font></font></div>
+<div class="sommaire">
+    <h1 class="text-dark">Favier Stanislas</h1>
+    <p class="text-dark">Je suis actuellement en première année du BUT Réseau et Télécommunications.</p>
+    <div class="card border-info mb-3" style="max-width: 50rem;">
+        <div class="card-header">Sommaire</div>
         <div class="card-body">
-            <h4 class="card-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Titre de la carte Succès</font></font></h4>
-            <p class="card-text"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Voici un exemple de texte rapide pour compléter le titre de la carte et constituer l'essentiel de son contenu.</font></font></p>
-        </div>
-    </div>
-    <div class="card border-success mb-3" style="max-width: 20rem;">
-        <div class="card-header"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">En-tête</font></font></div>
-        <div class="card-body">
-            <h4 class="card-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Titre de la carte Succès</font></font></h4>
-            <p class="card-text"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Voici un exemple de texte rapide pour compléter le titre de la carte et constituer l'essentiel de son contenu.</font></font></p>
-        </div>
-    </div>
-    <div class="card border-success mb-3" style="max-width: 20rem;">
-        <div class="card-header"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">En-tête</font></font></div>
-        <div class="card-body">
-            <h4 class="card-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Titre de la carte Succès</font></font></h4>
-            <p class="card-text"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Voici un exemple de texte rapide pour compléter le titre de la carte et constituer l'essentiel de son contenu.</font></font></p>
+            <h4 class="card-title">Info card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
     </div>
 </div>
+
+<div class="compétence">
+    <h1 class="text-dark">Compétence</h1>
+    <p class="text-dark">Il existe 3 compétence dans la formation que je réalise.</p>
+</div>
+
+<div class="liste_compétences">
+    <div class="card border-secondary mb-3" style="max-width: 25rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h4 class="card-title">Secondary card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-secondary mb-3" style="max-width: 25rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h4 class="card-title">Secondary card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card border-secondary mb-3" style="max-width: 25rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h4 class="card-title">Secondary card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

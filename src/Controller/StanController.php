@@ -15,4 +15,20 @@ final class StanController extends AbstractController
             'controller_name' => 'StanController',
         ]);
     }
+
+    #[Route('/cv', name: 'app_cv')]
+    public function cv(): Response
+    {
+        return $this->render('stan/cv.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
+    
+    #[Route('/contacte', name: 'app_contacte')]
+    public function contacte(): Response
+    {
+        return $this->render('stan/contacte.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
 }
