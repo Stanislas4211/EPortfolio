@@ -55,4 +55,12 @@ final class StanController extends AbstractController
             'controller_name' => 'StanController',
         ]);
     }
+
+    #[Route('/Connecter', name: 'app_moi')]
+    public function moi(): Response
+    {
+        return $this->render('stan/moi.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
 }

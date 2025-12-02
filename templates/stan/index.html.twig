@@ -2,60 +2,246 @@
 
 {% block title %}EPortfolio Favier Stanislas{% endblock %}
 
+
 {% block body %}
-
-<div class="sommaire">
-    <h1 class="text-dark">Favier Stanislas</h1>
-    <p class="text-dark">Je suis actuellement en première année du BUT Réseau et Télécommunications.</p>
-    <div class="card border-info mb-3" style="max-width: 50rem;">
-        <div class="card-header">Sommaire</div>
-        <div class="card-body">
-            <h4 class="card-title">Info card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div class="container-custom">
+    <!-- Section Hero -->
+    <section class="hero-section">
+        <h1>Favier Stanislas</h1>
+        <p>Je suis actuellement en première année du BUT Réseau et Télécommunications à Roanne.</p>
+        
+        <div class="card about-card">
+            <div class="card-header">
+                <a href="{{ path('app_moi') }}">
+                    <h4>📚 Pour en apprendre plus sur moi!</h4>
+                </a>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Je vous invite à cliquer sur ce bouton si vous souhaitez en apprendre davantage sur moi, sur mes hobbies et sur les différents projets personnels que j'ai pu réaliser.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="competence-section">
+        <h1>Compétences</h1>
+        <p>La formation repose sur un socle commun de compétences dans les domaines réseaux, informatiques et télécommunications. Il y a donc 3 compétences qui vous sont présentées ci-dessous avec les différents apprentissages critiques que je maîtrise pour chacune d'elles.</p>
+
+        <div class="row g-4">
+            <!-- Carte Administrer -->
+            <div class="col-md-4">
+                <div class="card competence-card">
+                    <div class="card-header">
+                        <a href="{{ path('app_administrer') }}">
+                            <span class="card-icon">🔧</span> Administrer
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Niveau 1</h4>
+                        <p class="card-text">Assister l'administrateur du réseau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Connecter -->
+            <div class="col-md-4">
+                <div class="card competence-card">
+                    <div class="card-header">
+                        <a href="{{ path('app_connecter') }}">
+                            <span class="card-icon">🔗</span> Connecter
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Niveau 1</h4>
+                        <p class="card-text">Découvrir les transmissions et la ToIP.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte Programmer -->
+            <div class="col-md-4">
+                <div class="card competence-card">
+                    <div class="card-header">
+                        <a href="{{ path('app_programmer') }}">
+                            <span class="card-icon">💻</span> Programmer
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Niveau 1</h4>
+                        <p class="card-text">S'intégrer dans un service informatique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+{% endblock %}
 
-<div class="compétence">
-    <h1 class="text-dark">Compétence</h1>
-    <p class="text-dark"> La formation repose sur un socle commun de compétences dans les domaines réseaux, informatiques et télécommunications. Il y a donc 3 compétences qui vous sont présentées 
-    ci-dessous avec les différents apprentissages critiques que je maîtrise pour chacune d'elles.</p>
-</div>
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        /* Style personnalisé qui s'ajoute à Bootstrap */
+        body {
+            background: linear-gradient(135deg,rgb(30, 181, 207) 0%,rgb(6, 41, 61) 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
 
-<div class="liste_compétences">
-    <div class="card border-secondary mb-3" style="max-width: 25rem;">
-        <div class="card-header">
-            <a class="nav-link active" href="{{ path('app_administrer') }}">Administrer
-                <span class="visually-hidden">(current)</span>
-            </a>
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Niveau 1</h4>
-            <p class="card-text"> Assister	l’administrateur du réseau.</p>
-        </div>
-    </div>
-    <div class="card border-secondary mb-3" style="max-width: 25rem;">
-        <div class="card-header">
-            <a class="nav-link active" href="{{ path('app_connecter') }}">Connecter
-                <span class="visually-hidden">(current)</span>
-            </a>
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Niveau 1</h4>
-            <p class="card-text">Découvrir les	transmissions et la ToIP.</p>
-        </div>
-    </div>
-    <div class="card border-secondary mb-3" style="max-width: 25rem;">
-        <div class="card-header">
-            <a class="nav-link active" href="{{ path('app_programmer') }}">Programmer
-                <span class="visually-hidden">(current)</span>
-            </a>
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Niveau 1</h4>
-            <p class="card-text">S’intégrer	dans un	service informatique.</p>
-        </div>
-    </div>
-</div>
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            
+        }
 
+        /* Section Hero - amélioration des cards Bootstrap */
+        .hero-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg,rgb(97, 93, 93) 0%,rgb(0, 0, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .hero-section > p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Carte "À propos" avec style Bootstrap amélioré */
+        .about-card {
+            background: linear-gradient(135deg,rgb(97, 93, 93) 0%,rgb(0, 0, 0) 100%);
+            border: none;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .about-card .card-header {
+            background: transparent;
+            border: none;
+            padding: 1.5rem;
+        }
+
+        .about-card .card-header h4 {
+            color: white;
+            margin: 0;
+        }
+
+        .about-card .card-body {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .about-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section Compétences */
+        .competence-section h1 {
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+        }
+
+        .competence-section > p {
+            color: white;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Amélioration des cards Bootstrap pour les compétences */
+        .competence-card {
+            border: none;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+            height: 100%;
+        }
+
+        .competence-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .competence-card .card-header {
+            background: linear-gradient(135deg,rgb(97, 93, 93) 0%,rgb(0, 0, 0) 100%);
+            border: none;
+            padding: 1.5rem;
+        }
+
+        .competence-card .card-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .competence-card .card-body h4 {
+            color: #667eea;
+        }
+
+        .card-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .competence-card:nth-child(2) { animation-delay: 0.1s; }
+        .competence-card:nth-child(3) { animation-delay: 0.2s; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0;
+            }
+
+            .hero-section {
+                padding: 2rem;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .competence-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 {% endblock %}
