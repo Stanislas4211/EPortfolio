@@ -31,4 +31,28 @@ final class StanController extends AbstractController
             'controller_name' => 'StanController',
         ]);
     }
+
+    #[Route('/Administrer', name: 'app_administrer')]
+    public function administrer(): Response
+    {
+        return $this->render('competence/administrer/administrer.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
+
+    #[Route('/Programmer', name: 'app_programmer')]
+    public function programmer(): Response
+    {
+        return $this->render('competence/programmer/programmer.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
+
+    #[Route('/Connecter', name: 'app_connecter')]
+    public function connecter(): Response
+    {
+        return $this->render('competence/connecter/connecter.html.twig', [
+            'controller_name' => 'StanController',
+        ]);
+    }
 }
