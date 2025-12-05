@@ -1,9 +1,432 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}EPortfolio Favier Stanislas{% endblock %}
+{% block title %}Mon CV - Favier Stanislas{% endblock %}
 
 {% block body %}
-    <h1>Mon CV</h1>
-    <p>Bienvenue sur ma page CV !</p>
-    <!-- Mets ton contenu CV ici -->
+<div class="container-custom">
+    <section class="hero-section">
+        <h1>Mon CV</h1>
+        <p>Découvrez mon parcours, mes compétences et mes expériences professionnelles.</p>
+    </section>
+
+
+    <section class="cv-section">
+        <div class="cv-container">
+            <!-- Informations personnelles -->
+            <div class="cv-header">
+                <h2>Favier Stanislas</h2>
+                <p class="cv-subtitle">Étudiant en BUT Réseau et Télécommunications</p>
+                <div class="cv-contact">
+                    <span>🔗 stan_fav210@gmail.com</span>
+                    <span>🔗 stanislas.favier@etu.univ-st-etienne.fr</span>
+                    <span>📱 06 44 88 80 27</span>
+                    <span>📍 Roanne (42300)</span>
+                    <span>🚗 Permis</span>
+                </div>
+            </div>
+
+            <!-- Profil -->
+            <div class="cv-section-block">
+                <h3>Profil</h3>
+                <p class="cv-description">Engagé, curieux, autonome et conscient du travail qui m'attend, je sais que je serais un élément moteur au sein de votre entreprise!</p>
+            </div>
+
+            <!-- Formation -->
+            <div class="cv-section-block">
+                <h3>Formation</h3>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h4>Première année en formation BUT Réseau et Télécom</h4>
+                        <span class="cv-date">2025-2026</span>
+                    </div>
+                    <p class="cv-location">IUT de Roanne</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h4>Baccalauréat mention Assez bien</h4>
+                        <span class="cv-date">2025</span>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h4>Brevet des collèges mention très bien</h4>
+                        <span class="cv-date">2021</span>
+                    </div>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h4>Brevet d'initiation aéronautique (BIA)</h4>
+                        <span class="cv-date">2020</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expériences professionnelles -->
+            <div class="cv-section-block">
+                <h3>Expériences Professionnelles</h3>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h4>Stage d'observation en architecture (1 semaine)</h4>
+                        <span class="cv-date">06/2022</span>
+                    </div>
+                    <p class="cv-location">Atelier Ampère</p>
+                    <ul class="cv-list">
+                        <li>Assistance sur rendu photoréaliste de projets</li>
+                        <li>Réalisation d'un plan sur informatique</li>
+                        <li>Suivi des relations avec les fournisseurs et fabricants de matériaux</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Compétences -->
+            <div class="cv-section-block">
+                <h3>Compétences</h3>
+                <p class="cv-description" style="margin-bottom: 1.5rem;">J'ai déjà acquis au cours de la formation de nombreuses compétences en plus de celles que je possédais déjà.</p>
+                <ul class="cv-list">
+                    <li>Création de machine virtuel sur Ubuntu (sous linux ou Windows)</li>
+                    <li>Savoir traduire un algorithme en Python en C dans un environnement donné</li>
+                    <li>Fondamentaux en électronique</li>
+                    <li>Configuration d'un switch grâce à PuTTY</li>
+                </ul>
+            </div>
+
+            <!-- Centres d'intérêt -->
+            <div class="cv-section-block">
+                <h3>Centres d'Intérêt</h3>
+                
+                <div class="interest-category">
+                    <h4>SPORTS</h4>
+                    <p class="cv-description">Basket-ball, Natation, Musculation</p>
+                </div>
+
+                <div class="interest-category">
+                    <h4>CULTURE</h4>
+                    <p class="cv-description">Regarde des reportages pour en apprendre plus sur le monde et l'histoire</p>
+                </div>
+
+                <div class="interest-category">
+                    <h4>INFORMATIQUE</h4>
+                    <p class="cv-description">Codage, Montage vidéo et jeux vidéo de conception</p>
+                </div>
+            </div>
+
+            <!-- Bouton de téléchargement -->
+            <div class="cv-download">
+                <a href="#" class="btn-download"> Télécharger mon CV en PDF</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        /* Style personnalisé qui reprend le thème de la page d'accueil */
+        body {
+            background: linear-gradient(135deg, rgb(30, 181, 207) 0%, rgb(6, 41, 61) 100%);
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Section Hero */
+        .hero-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.6s ease-out;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Section CV */
+        .cv-section {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .cv-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header du CV */
+        .cv-header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid;
+            border-image: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%) 1;
+            margin-bottom: 2rem;
+        }
+
+        .cv-header h2 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-subtitle {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .cv-contact {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Sections du CV */
+        .cv-section-block {
+            margin-bottom: 2.5rem;
+        }
+
+        .cv-section-block h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Items du CV */
+        .cv-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid transparent;
+            border-image: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%) 1;
+            transition: transform 0.3s ease;
+        }
+
+        .cv-item:hover {
+            transform: translateX(5px);
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .cv-item h4 {
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .cv-date {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .cv-location {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .cv-list {
+            list-style: none;
+            padding-left: 0;
+            color: #555;
+        }
+
+        .cv-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .cv-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Grille de compétences */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category h4 {
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Langues */
+        .languages {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .language-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .language-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .language-level {
+            color: #667eea;
+            font-size: 0.9rem;
+        }
+
+        /* Centres d'intérêt */
+        .interests {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .interest-tag {
+            background: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .interest-tag:hover {
+            transform: scale(1.05);
+        }
+
+        /* Bouton de téléchargement */
+        .cv-download {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(135deg, rgb(97, 93, 93) 0%, rgb(0, 0, 0) 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container-custom {
+                padding: 1rem;
+            }
+
+            .hero-section,
+            .cv-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .cv-header h2 {
+                font-size: 2rem;
+            }
+
+            .cv-contact {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .cv-item-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 {% endblock %}
