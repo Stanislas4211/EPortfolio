@@ -1,28 +1,44 @@
-import './stimulus_bootstrap.js';
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
 import './styles/app.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+// ===== MODE JOUR/NUIT =====
 
-const toggle = document.getElementById("theme-toggle");
-const currentTheme = localStorage.getItem("theme");
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
 
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-}
+    // Mettre à jour l'icône selon le thème actuel
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    updateIcon(savedTheme);
 
-toggle.addEventListener("click", () => {
-  let theme = document.documentElement.getAttribute("data-theme");
-  if (theme === "dark") {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  }
+    // Écouter le clic sur le bouton
+    themeToggle.addEventListener('click', function() {
+        if (html.classList.contains('dark-mode')) {
+            disableDarkMode();
+        } else {
+            enableDarkMode();
+        }
+    });
+
+    function enableDarkMode() {
+        html.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        updateIcon('dark');
+    }
+
+    function disableDarkMode() {
+        html.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        updateIcon('light');
+    }
+
+    function updateIcon(theme) {
+        if (theme === 'dark') {
+            themeIcon.classList.remove('bi-moon-fill');
+            themeIcon.classList.add('bi-sun-fill');
+        } else {
+            themeIcon.classList.remove('bi-sun-fill');
+            themeIcon.classList.add('bi-moon-fill');
+        }
+    }
 });

@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class StanController extends AbstractController
 {
-    #[Route('/', name: 'app_stan')]
+    #[Route('/', name: 'app_stan', requirements: ['_locale' => 'fr|en'])]
     public function index(): Response
     {
         return $this->render('stan/index.html.twig', [
@@ -16,7 +16,7 @@ final class StanController extends AbstractController
         ]);
     }
 
-    #[Route('/cv', name: 'app_cv')]
+    #[Route('/cv', name: 'app_cv', requirements: ['_locale' => 'fr|en'])]
     public function cv(): Response
     {
         return $this->render('stan/cv.html.twig', [
@@ -24,7 +24,7 @@ final class StanController extends AbstractController
         ]);
     }
     
-    #[Route('/contacte', name: 'app_contacte')]
+    #[Route('/contacte', name: 'app_contacte', requirements: ['_locale' => 'fr|en'])]
     public function contacte(): Response
     {
         return $this->render('stan/contacte.html.twig', [
@@ -32,7 +32,7 @@ final class StanController extends AbstractController
         ]);
     }
 
-    #[Route('/Administrer', name: 'app_administrer')]
+    #[Route('/Administrer', name: 'app_administrer', requirements: ['_locale' => 'fr|en'])]
     public function administrer(): Response
     {
         return $this->render('competence/administrer/administrer.html.twig', [
@@ -40,7 +40,7 @@ final class StanController extends AbstractController
         ]);
     }
 
-    #[Route('/Programmer', name: 'app_programmer')]
+    #[Route('/Programmer', name: 'app_programmer', requirements: ['_locale' => 'fr|en'])]
     public function programmer(): Response
     {
         return $this->render('competence/programmer/programmer.html.twig', [
@@ -48,7 +48,7 @@ final class StanController extends AbstractController
         ]);
     }
 
-    #[Route('/Connecter', name: 'app_connecter')]
+    #[Route('/Connecter', name: 'app_connecter', requirements: ['_locale' => 'fr|en'])]
     public function connecter(): Response
     {
         return $this->render('competence/connecter/connecter.html.twig', [
@@ -56,7 +56,7 @@ final class StanController extends AbstractController
         ]);
     }
 
-    #[Route('/Connecter', name: 'app_moi')]
+    #[Route('/moi', name: 'app_moi', requirements: ['_locale' => 'fr|en'])]
     public function moi(): Response
     {
         return $this->render('stan/moi.html.twig', [
