@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'cv_register.meta_title'|trans }}{% endblock %}
+
+{% block body %}
+<div class="py-5">
+    <!-- Main Section -->
+    <section class="mb-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center py-5">
+                <h1 class="display-4 mb-3">{{ 'cv_register.title'|trans }}</h1>
+                <p class="lead text-muted">{{ 'cv_register.subtitle'|trans }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire Section -->
+    <section>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <form id="cvRegisterForm" method="POST" class="needs-validation" novalidate>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstname" class="form-label">{{ 'cv_register.firstname'|trans }}</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" required>
+                            <div class="invalid-feedback">
+                                {{ 'cv_register.firstname_required'|trans }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastname" class="form-label">{{ 'cv_register.lastname'|trans }}</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" required>
+                            <div class="invalid-feedback">
+                                {{ 'cv_register.lastname_required'|trans }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">{{ 'cv_register.email'|trans }}</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            {{ 'cv_register.email_required'|trans }}
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">
+                            {{ 'cv_register.phone'|trans }}
+                            <span class="text-muted">({{ 'cv_register.optional'|trans }})</span>
+                        </label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">
+                            {{ 'cv_register.message'|trans }}
+                            <span class="text-muted">({{ 'cv_register.optional'|trans }})</span>
+                        </label>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="{{ 'cv_register.message_placeholder'|trans }}"></textarea>
+                    </div>
+
+                    <div class="alert alert-info" role="alert">
+                        <i class="bi bi-info-circle me-2"></i>
+                        {{ 'cv_register.info_message'|trans }}
+                    </div>
+
+                    <div class="d-flex">
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="bi bi-file-earmark-pdf me-2"></i>
+                            {{ 'cv_register.download_pdf'|trans }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.getElementById('cvRegisterForm').addEventListener('submit', function(e) {
+        if (!this.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.classList.add('was-validated');
+        } else {
+            // Toujours la route PDF
+            this.action = '{{ path("download_cv_pdf") }}';
+            this.method = 'POST';
+        }
+    });
+</script>
+{% endblock %}

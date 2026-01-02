@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}À propos de moi - EPortfolio Favier Stanislas{% endblock %}
+{% block title %}{{ 'about.meta_title'|trans }}{% endblock %}
 
 {% block body %}
 <div class="py-5">
-    <!-- Hero Section -->
+    <!-- Main Section -->
     <section class="mb-5">
         <div class="card shadow-sm border-0">
             <div class="card-body text-center py-5">
-                <h1 class="display-4 mb-3">À propos de moi</h1>
-                <p class="lead text-muted">Découvrez mes loisirs, passions, envies et projets.</p>
+                <h1 class="display-4 mb-3">{{ 'about.title'|trans }}</h1>
+                <p class="lead text-muted">{{ 'about.subtitle'|trans }}</p>
             </div>
         </div>
     </section>
@@ -18,15 +18,12 @@
     <section class="mb-5">
         <div class="card shadow-sm border-0">
             <div class="card-body">
-                <h2 class="h3 mb-4">Qui suis-je ?</h2>
+                <h2 class="h3 mb-4">{{ 'about.who_title'|trans }}</h2>
                 <p class="text-muted mb-3">
-                    Je suis Stanislas Favier, étudiant en première année de BUT Réseau et Télécommunications à l'IUT de Roanne. 
-                    Passionné par les technologies et l'informatique, j'aime repousser les limites de mes connaissances et découvrir 
-                    de nouveaux domaines chaque jour.
+                    {{ 'about.who_p1'|trans }}
                 </p>
                 <p class="text-muted">
-                    Au-delà de mes études, je suis quelqu'un de dynamique qui apprécie le travail d'équipe et les défis. 
-                    Mes loisirs et passions reflètent ma nature curieuse et mon envie constante de progresser.
+                    {{ 'about.who_p2'|trans }}
                 </p>
             </div>
         </div>
@@ -36,7 +33,7 @@
     <section class="mb-5">
         <div class="card shadow-sm border-0">
             <div class="card-body">
-                <h2 class="h3 mb-4">Mes passions en images</h2>
+                <h2 class="h3 mb-4">{{ 'about.gallery_title'|trans }}</h2>
                 <div class="row g-4">
                     <!-- Sports -->
                     <div class="col-md-6 col-lg-4">
@@ -44,7 +41,7 @@
                             <img src="{{ asset('images/sports.jpg') }}" class="card-img-top" alt="Sports" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">Sports</h5>
-                                <p class="card-text text-muted">Basket-ball, Natation, Musculation</p>
+                                <p class="card-text text-muted">{{ 'about.card_sports_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -52,10 +49,10 @@
                     <!-- Informatique -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset('images/informatique.jpg') }}" class="card-img-top" alt="Informatique" style="object-fit: cover; height: 200px;">
+                            <img src="{{ asset('images/informatique.jpg') }}" class="card-img-top" alt="{{ 'about.card_it_alt'|trans }}" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Informatique</h5>
-                                <p class="card-text text-muted">Codage, Développement, Nouvelles technologies</p>
+                                <h5 class="card-title text-primary">{{ 'about.card_it_title'|trans }}</h5>
+                                <p class="card-text text-muted">{{ 'about.card_it_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -63,10 +60,10 @@
                     <!-- Culture -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset('images/culture.jpg') }}" class="card-img-top" alt="Culture" style="object-fit: cover; height: 200px;">
+                            <img src="{{ asset('images/culture.jpg') }}" class="card-img-top" alt="{{ 'about.card_culture_alt'|trans }}" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Culture</h5>
-                                <p class="card-text text-muted">Histoire, Reportages, Documentaires</p>
+                                <h5 class="card-title text-primary">{{ 'about.card_culture_title'|trans }}</h5>
+                                <p class="card-text text-muted">{{ 'about.card_culture_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -74,10 +71,10 @@
                     <!-- Projets -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset('images/projets.jpg') }}" class="card-img-top" alt="Projets" style="object-fit: cover; height: 200px;">
+                            <img src="{{ asset('images/projets.jpg') }}" class="card-img-top" alt="{{ 'about.card_projects_alt'|trans }}" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Projets</h5>
-                                <p class="card-text text-muted">Conception, Montage vidéo, Innovations</p>
+                                <h5 class="card-title text-primary">{{ 'about.card_projects_title'|trans }}</h5>
+                                <p class="card-text text-muted">{{ 'about.card_projects_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -85,21 +82,21 @@
                     <!-- Réseaux -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset('images/reseaux.jpg') }}" class="card-img-top" alt="Réseaux" style="object-fit: cover; height: 200px;">
+                            <img src="{{ asset('images/reseaux.jpg') }}" class="card-img-top" alt="{{ 'about.card_networks_alt'|trans }}" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Réseaux</h5>
-                                <p class="card-text text-muted">Administration, Configuration, Sécurité</p>
+                                <h5 class="card-title text-primary">{{ 'about.card_networks_title'|trans }}</h5>
+                                <p class="card-text text-muted">{{ 'about.card_networks_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Apprentissage -->
+                    <!-- Lecture -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card border-0 shadow-sm h-100">
-                            <img src="{{ asset('images/lecture.jpg') }}" class="card-img-top" alt="Apprentissage" style="object-fit: cover; height: 200px;">
+                            <img src="{{ asset('images/lecture.jpg') }}" class="card-img-top" alt="{{ 'about.card_reading_alt'|trans }}" style="object-fit: cover; height: 200px;">
                             <div class="card-body">
-                                <h5 class="card-title text-primary">Lecture</h5>
-                                <p class="card-text text-muted">Roman, Manga, BD</p>
+                                <h5 class="card-title text-primary">{{ 'about.card_reading_title'|trans }}</h5>
+                                <p class="card-text text-muted">{{ 'about.card_reading_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -108,18 +105,18 @@
         </div>
     </section>
 
-    <!-- Compétences additionnelles -->
+    <!-- Qualités personnelles -->
     <section>
         <div class="card shadow-sm border-0">
             <div class="card-body">
-                <h2 class="h3 mb-4">Qualités personnelles</h2>
+                <h2 class="h3 mb-4">{{ 'about.traits_title'|trans }}</h2>
                 <div class="row g-3">
                     <div class="col-md-6">
                         <div class="d-flex mb-3">
                             <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
                             <div>
-                                <h5 class="mb-1">Curiosité</h5>
-                                <p class="text-muted small">Toujours en quête de nouvelles connaissances</p>
+                                <h5 class="mb-1">{{ 'about.trait_curiosity_title'|trans }}</h5>
+                                <p class="text-muted small">{{ 'about.trait_curiosity_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -127,8 +124,8 @@
                         <div class="d-flex mb-3">
                             <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
                             <div>
-                                <h5 class="mb-1">Autonomie</h5>
-                                <p class="text-muted small">Capable de travailler indépendamment</p>
+                                <h5 class="mb-1">{{ 'about.trait_autonomy_title'|trans }}</h5>
+                                <p class="text-muted small">{{ 'about.trait_autonomy_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -136,8 +133,8 @@
                         <div class="d-flex mb-3">
                             <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
                             <div>
-                                <h5 class="mb-1">Travail d'équipe</h5>
-                                <p class="text-muted small">Collaboration et communication efficace</p>
+                                <h5 class="mb-1">{{ 'about.trait_team_title'|trans }}</h5>
+                                <p class="text-muted small">{{ 'about.trait_team_text'|trans }}</p>
                             </div>
                         </div>
                     </div>
@@ -145,8 +142,8 @@
                         <div class="d-flex mb-3">
                             <i class="bi bi-star-fill text-primary me-2" style="font-size: 1.25rem;"></i>
                             <div>
-                                <h5 class="mb-1">Engagement</h5>
-                                <p class="text-muted small">Motivé et déterminé dans mes projets</p>
+                                <h5 class="mb-1">{{ 'about.trait_commitment_title'|trans }}</h5>
+                                <p class="text-muted small">{{ 'about.trait_commitment_text'|trans }}</p>
                             </div>
                         </div>
                     </div>

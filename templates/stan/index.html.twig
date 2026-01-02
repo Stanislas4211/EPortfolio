@@ -8,14 +8,21 @@
     <div class="card shadow-sm mb-5">
         <div class="card-body text-center py-5">
             <h1 class="display-3 mb-4">Favier Stanislas</h1>
-            <p class="lead mb-4">Étudiant en BUT Réseau et Télécommunications</p>
+
+            <p class="lead mb-4">{{ 'home.title'|trans }}</p>
             
             <div class="row justify-content-center mt-4">
                 <div class="col-md-8">
                     <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <span class="badge bg-secondary fs-6">stanislas.favier@etu.univ-st-stienne.fr</span>
-                        <span class="badge bg-secondary fs-6">06 44 88 80 27</span>
-                        <span class="badge bg-secondary fs-6">Roanne (42300)</span>
+                        <span class="badge bg-secondary fs-6">
+                            stanislas.favier@etu.univ-st-stienne.fr
+                        </span>
+                        <span class="badge bg-secondary fs-6">
+                            06 44 88 80 27
+                        </span>
+                        <span class="badge bg-secondary fs-6">
+                            Roanne (42300), France
+                        </span>
                     </div>
                 </div>
             </div>
@@ -23,9 +30,7 @@
             <hr class="my-4">
             
             <p class="fs-5 text-muted">
-                Je suis actuellement en première année du BUT Réseau et Télécommunications à l'IUT de Roanne. 
-                Passionné par les technologies réseau, l'informatique et les télécommunications, 
-                je développe mes compétences à travers des projets concrets et une formation complète.
+                {{ 'home.intro'|trans }}
             </p>
         </div>
     </div>
@@ -33,36 +38,32 @@
     <!-- Container "Pour en savoir plus" -->
     <div class="card border-primary shadow-sm">
         <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">Pour en savoir plus</h3>
+            <h3 class="mb-0">{{ 'home.more_title'|trans }}</h3>
         </div>
         <div class="card-body">
             <p class="card-text mb-4">
-                Découvrez mon parcours complet, mes compétences détaillées, mes projets personnels 
-                et mes centres d'intérêt. Explorez également mon CV et mes réalisations académiques.
+                {{ 'home.more_text'|trans }}
             </p>
             
             <div class="row g-3">
                 <div class="col-md-4">
                     <a href="{{ path('app_moi') }}" class="btn btn-outline-primary w-100 py-3">
-                        <strong>À propos de moi</strong>
-                        <br>
-                        <small>Mes hobbies et projets</small>
+                        <strong>{{ 'home.btn_about_title'|trans }}</strong><br>
+                        <small>{{ 'home.btn_about_sub'|trans }}</small>
                     </a>
                 </div>
                 
                 <div class="col-md-4">
                     <a href="{{ path('app_cv') }}" class="btn btn-outline-primary w-100 py-3">
-                        <strong>Mon CV</strong>
-                        <br>
-                        <small>Parcours et expériences</small>
+                        <strong>{{ 'home.btn_cv_title'|trans }}</strong><br>
+                        <small>{{ 'home.btn_cv_sub'|trans }}</small>
                     </a>
                 </div>
                 
                 <div class="col-md-4">
                     <a href="{{ path('app_contacte') }}" class="btn btn-outline-primary w-100 py-3">
-                        <strong>Me contacter</strong>
-                        <br>
-                        <small>Comment faire?</small>
+                        <strong>{{ 'home.btn_contact_title'|trans }}</strong><br>
+                        <small>{{ 'home.btn_contact_sub'|trans }}</small>
                     </a>
                 </div>
             </div>

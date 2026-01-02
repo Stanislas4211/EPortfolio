@@ -1,10 +1,210 @@
-home: "Home"
-administrer: "Manage"
-connecter: "Connect"
-programmer: "Programming"
-moi: "About Me"
-cv: "Resume"
-contact: "Contact"
-inscription: "Registration"
-french: "Français"
-english: "English"
+#index
+home.title: "Student in Networks & Telecommunications"
+
+home.intro: >
+  I am currently in my first year of the BUT Networks and Telecommunications program at the IUT in Roanne. 
+  Passionate about technology, computer science, and programming, I am developing my skills through practical projects and comprehensive training.
+
+home.more_title: "Learn more"
+home.more_text: "Discover my full background, experience, personal projects and interests."
+
+home.btn_about_title: "About me"
+home.btn_about_sub: "My hobbies and projects"
+
+home.btn_cv_title: "My resume"
+home.btn_cv_sub: "Education and experience"
+
+home.btn_contact_title: "Contact me"
+home.btn_contact_sub: "How to reach me?"
+
+
+#base
+nav.home: "Home"
+nav.cv: "My resume"
+nav.contact: "Contact me"
+nav.skills: "Skills"
+nav.skill_admin: "Administer"
+nav.skill_connect: "Connect"
+nav.skill_program: "Program"
+
+nav.language_fr: "French"
+nav.language_en: "English"
+
+
+#footer
+footer.rights: "All rights reserved."
+
+footer.link_home: "Home"
+footer.link_legal: "Legal notice"
+footer.link_privacy: "Privacy policy"
+footer.link_contact: "Contact"
+
+
+#CV
+cv.meta_title: "My resume - Favier Stanislas e-Portfolio"
+cv.title: "My resume"
+cv.subtitle: "Discover my background, skills and professional experience."
+
+cv.header_role: "Student in Networks and Telecommunications"
+cv.license: "Driving licence (B)"
+
+cv.profile_title: "Profile"
+cv.profile_text: >
+  Motivated, curious, autonomous and aware of the work ahead, I know I can be a driving force within your company.
+
+cv.education_title: "Education"
+cv.education_but: "First year of Networks and Telecommunications Bachelor"
+cv.education_but_place: "IUT of Roanne"
+cv.education_bac: "Baccalauréat (high school diploma), honours"
+cv.education_brevet: "Middle school diploma with highest honours"
+cv.education_bia: "Aeronautical initiation certificate (BIA)"
+
+cv.exp_title: "Professional experience"
+cv.exp_archi_title: "Observation internship in architecture (1 week)"
+cv.exp_archi_item1: "Assisted with photorealistic renderings of projects"
+cv.exp_archi_item2: "Created floor plans using CAD software"
+cv.exp_archi_item3: "Observed relationships with suppliers and material manufacturers"
+
+cv.skills_title: "Skills"
+cv.skills_intro: "Through my degree and personal projects, I have already acquired a number of technical skills."
+cv.skill_vm: "Video editing"
+cv.skill_algo: "Creating a Python or C algorithm in a given environment"
+cv.skill_elec: "Fundamentals of electronics"
+cv.skill_switch: "Website creation using Symfony"
+cv.skills_plus: "To learn more about the skills I acquired during my training, you can explore the skills tab in the navigation bar."
+
+cv.download_btn: "Download my resume as PDF"
+
+
+#moi
+about.meta_title: "About me - Favier Stanislas e-Portfolio"
+about.title: "About me"
+about.subtitle: "Discover my hobbies, passions, goals and projects."
+
+about.who_title: "Who am I?"
+about.who_p1: >
+  My name is Stanislas Favier, and I am a first-year student studying for a Bachelor's degree in Networks and Telecommunications at the University Institute of Technology in Roanne. 
+  I am passionate about technology and IT, and I enjoy pushing the boundaries of my knowledge and discovering new areas every day.
+about.who_p2: >
+  Beyond my studies, I am dynamic and enjoy teamwork and challenges. My hobbies and passions reflect my curiosity and my constant desire to improve.
+
+about.gallery_title: "My passions in pictures"
+
+about.card_sports_text: "Basketball, swimming, weight training"
+
+about.card_it_alt: "Computer science"
+about.card_it_title: "Computer science"
+about.card_it_text: "Coding, development, new technologies"
+
+about.card_culture_alt: "Culture"
+about.card_culture_title: "Culture"
+about.card_culture_text: "History, documentaries, geopolitics"
+
+about.card_projects_alt: "Projects"
+about.card_projects_title: "Projects"
+about.card_projects_text: "Design, video editing, innovation"
+
+about.card_networks_alt: "Networks"
+about.card_networks_title: "Networks"
+about.card_networks_text: "Administration, configuration, security"
+
+about.card_reading_alt: "Reading"
+about.card_reading_title: "Reading"
+about.card_reading_text: "Novels, manga, comic books"
+
+about.traits_title: "Personal qualities"
+about.trait_curiosity_title: "Curiosity"
+about.trait_curiosity_text: "Always looking for new knowledge"
+about.trait_autonomy_title: "Autonomy"
+about.trait_autonomy_text: "Able to work independently"
+about.trait_team_title: "Teamwork"
+about.trait_team_text: "Effective collaboration and communication"
+about.trait_commitment_title: "Commitment"
+about.trait_commitment_text: "Motivated and determined in my projects"
+
+
+#contacte
+contact.meta_title: "Contact me - Favier Stanislas e-Portfolio"
+contact.title: "Contact me"
+contact.subtitle: "Feel free to contact me for any question or professional opportunity."
+
+contact.emails_title: "My emails"
+contact.personal_email_title: "Personal email"
+contact.student_email_title: "Student email"
+contact.send_email_btn: "Send an email"
+
+contact.phone_title: "Phone"
+contact.call_btn: "Call"
+
+contact.social_title: "Social networks"
+
+
+#administrer
+admin.meta_title: "Administer - Favier Stanislas e-Portfolio"
+admin.title: "Administer networks and the Internet"
+admin.subtitle: "Discover the different learning outcomes related to this skill."
+
+admin.see_proof: "View evidence document"
+
+admin.ac11_01: "AC11.01 - Master the fundamental laws of electricity in order to work on network and telecommunications equipment"
+admin.ac11_02: "AC11.02 - Understand the architecture and foundations of digital systems, principles of information encoding, communications and the Internet"
+admin.ac11_03: "AC11.03 - Configure the basic functions of a local network"
+admin.ac11_04: "AC11.04 - Master the roles and core principles of operating systems in order to configure and administer networks and provided services"
+admin.ac11_05: "AC11.05 - Be able to identify malfunctions in the local network"
+admin.ac11_06: "AC11.06 - Install a client workstation and explain the procedure used"
+
+
+#connecter
+connect.meta_title: "Connect - Favier Stanislas e-Portfolio"
+connect.title: "Connect telecommunication systems"
+connect.subtitle: "Discover the different learning outcomes related to this skill."
+
+connect.see_proof: "View evidence document"
+
+connect.ac12_01: "AC12.01 - Measure and analyse signals"
+connect.ac12_02: "AC12.02 - Characterise basic transmission systems and discover the mathematical modelling of how they work"
+connect.ac12_03: "AC12.03 - Deploy transmission media"
+connect.ac12_04: "AC12.04 - Connect ToIP systems"
+connect.ac12_05: "AC12.05 - Communicate with others (client, colleague, etc.) and adapt language and message to the audience"
+
+
+
+#programmer
+prog.meta_title: "Programming - Favier Stanislas e-Portfolio"
+prog.title: "Program and develop computer tools"
+prog.subtitle: "Discover the different learning outcomes related to this skill."
+
+prog.see_proof: "View evidence document"
+
+prog.ac13_01: "AC13.01 - Use a computer system and its tools"
+prog.ac13_02: "AC13.02 - Read, run, debug and modify a program"
+prog.ac13_03: "AC13.03 - Translate an algorithm into a given language and environment"
+prog.ac13_04: "AC13.04 - Know the architecture and technologies of a website"
+prog.ac13_05: "AC13.05 - Choose appropriate data management mechanisms for the tool and justify these choices"
+prog.ac13_06: "AC13.06 - Integrate into an environment suitable for development and collaborative work"
+
+
+#cv_download
+cv_register.meta_title: "Download My CV - Favier Stanislas e-Portfolio"
+cv_register.title: "Download My CV"
+cv_register.subtitle: "Complete the form below to get a copy of my CV in PDF or DOCX format."
+
+cv_register.firstname: "First name"
+cv_register.firstname_required: "First name is required."
+
+cv_register.lastname: "Last name"
+cv_register.lastname_required: "Last name is required."
+
+cv_register.email: "Email address"
+cv_register.email_required: "Please enter a valid email address."
+
+cv_register.phone: "Phone number"
+cv_register.message: "Message (optional)"
+cv_register.message_placeholder: "Feel free to write me a message..."
+
+cv_register.optional: "optional"
+
+cv_register.info_message: "Your personal information will not be stored. The form is only used to personalize your download request."
+
+cv_register.download_pdf: "Download as PDF"
+cv_register.download_docx: "Download as DOCX"

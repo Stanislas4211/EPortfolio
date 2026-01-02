@@ -1,37 +1,49 @@
-<!-- Pied de page du site -->
 <footer class="bg-dark text-white py-4 mt-5">
     <div class="container">
         <div class="row g-4">
             <!-- Section 1: Copyright -->
             <div class="col-md-4 text-center text-md-start">
-                <p class="mb-0 small">&copy; {{ "now"|date("Y") }} Favier Stanislas. Tous droits réservés.</p>
+                <p class="mb-0 small">
+                    &copy; {{ "now"|date("Y") }} Favier Stanislas. {{ 'footer.rights'|trans }}
+                </p>
             </div>
             
             <!-- Section 2: Liens de navigation -->
             <div class="col-md-4 text-center">
                 <ul class="list-unstyled mb-0">
-                    <li class="d-inline me-3"><a href="{{ path('app_stan') }}" class="text-white text-decoration-none">Accueil</a></li>
-                    <li class="d-inline me-3"><a href="#" class="text-white text-decoration-none">Mentions légales</a></li>
-                    <li class="d-inline me-3"><a href="#" class="text-white text-decoration-none">Confidentialité</a></li>
-                    <li class="d-inline"><a href="{{ path('app_contacte') }}" class="text-white text-decoration-none">Contacte</a></li>
+                    <li class="d-inline me-3">
+                        <a href="{{ path('app_stan') }}" class="text-white text-decoration-none">
+                            {{ 'footer.link_home'|trans }}
+                        </a>
+                    </li>
+                    <li class="d-inline me-3">
+                        <a href="#" class="text-white text-decoration-none">
+                            {{ 'footer.link_legal'|trans }}
+                        </a>
+                    </li>
+                    <li class="d-inline">
+                        <a href="{{ path('app_contacte') }}" class="text-white text-decoration-none">
+                            {{ 'footer.link_contact'|trans }}
+                        </a>
+                    </li>
                 </ul>
             </div>
             
             <!-- Section 3: Réseaux sociaux -->
             <div class="col-md-4 text-center text-md-end">
                 <div class="d-flex gap-3 justify-content-center justify-content-md-end">
-                    <!-- GitHub -->
-                    <a href="https://github.com/Stanislas4211" target="_blank" aria-label="Github" class="text-white text-decoration-none">
+                    <a href="https://github.com/Stanislas4211" target="_blank"
+                       aria-label="Github" class="text-white text-decoration-none">
                         <i class="bi bi-github" style="font-size: 1.5rem;"></i>
                     </a>
                     
-                    <!-- X (Twitter) -->
-                    <a href="https://x.com/Stanoxe" target="_blank" aria-label="X (Twitter)" class="text-white text-decoration-none">
+                    <a href="https://x.com/Stanoxe" target="_blank"
+                       aria-label="X" class="text-white text-decoration-none">
                         <i class="bi bi-twitter-x" style="font-size: 1.5rem;"></i>
                     </a>
                     
-                    <!-- LinkedIn -->
-                    <a href="#" target="_blank" aria-label="LinkedIn" class="text-white text-decoration-none">
+                    <a href="https://www.linkedin.com/in/stanislas-favier-451a443a1/" target="_blank"
+                       aria-label="LinkedIn" class="text-white text-decoration-none">
                         <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
                     </a>
                 </div>

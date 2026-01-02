@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Programmer - EPortfolio Favier Stanislas{% endblock %}
+{% block title %}{{ 'prog.meta_title'|trans }}{% endblock %}
 
 {% block body %}
 <div class="py-5">
-    <!-- Hero Section -->
+    <!-- Main Section -->
     <section class="mb-5">
         <div class="card shadow-sm border-0">
             <div class="card-body text-center py-5">
-                <h1 class="display-4 mb-3">Programmer et développer des outils informatiques</h1>
-                <p class="lead text-muted">Découvrez les différents apprentissages en lien avec cette compétence.</p>
+                <h1 class="display-4 mb-3">{{ 'prog.title'|trans }}</h1>
+                <p class="lead text-muted">{{ 'prog.subtitle'|trans }}</p>
             </div>
         </div>
     </section>
@@ -22,14 +22,16 @@
                     <!-- AC13.01 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
-                                <i class="bi bi-laptop text-primary me-2"></i> AC13.01 - Utiliser un système informatique et ses outils
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                                <i class="bi bi-laptop text-primary me-2"></i>
+                                {{ 'prog.ac13_01'|trans }}
                             </button>
                         </h2>
                         <div id="collapse01" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.01') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>
@@ -38,14 +40,16 @@
                     <!-- AC13.02 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
-                                <i class="bi bi-code-slash text-primary me-2"></i> AC13.02 - Lire, exécuter, corriger et modifier un programme
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                                <i class="bi bi-code-slash text-primary me-2"></i>
+                                {{ 'prog.ac13_02'|trans }}
                             </button>
                         </h2>
                         <div id="collapse02" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.02') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>
@@ -54,14 +58,16 @@
                     <!-- AC13.03 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
-                                <i class="bi bi-translate text-primary me-2"></i> AC13.03 - Traduire un algorithme, dans un langage et pour un environnement donné
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                                <i class="bi bi-translate text-primary me-2"></i>
+                                {{ 'prog.ac13_03'|trans }}
                             </button>
                         </h2>
                         <div id="collapse03" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.03') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>
@@ -70,14 +76,16 @@
                     <!-- AC13.04 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
-                                <i class="bi bi-globe text-primary me-2"></i> AC13.04 - Connaître l'architecture et les technologies d'un site Web
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse04" aria-expanded="false" aria-controls="collapse04">
+                                <i class="bi bi-globe text-primary me-2"></i>
+                                {{ 'prog.ac13_04'|trans }}
                             </button>
                         </h2>
                         <div id="collapse04" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.04') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>
@@ -86,14 +94,16 @@
                     <!-- AC13.05 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse05" aria-expanded="false" aria-controls="collapse05">
-                                <i class="bi bi-database text-primary me-2"></i> AC13.05 - Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse05" aria-expanded="false" aria-controls="collapse05">
+                                <i class="bi bi-database text-primary me-2"></i>
+                                {{ 'prog.ac13_05'|trans }}
                             </button>
                         </h2>
                         <div id="collapse05" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.05') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>
@@ -102,14 +112,16 @@
                     <!-- AC13.06 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse06" aria-expanded="false" aria-controls="collapse06">
-                                <i class="bi bi-people text-primary me-2"></i> AC13.06 - S'intégrer dans un environnement propice au développement et au travail collaboratif
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse06" aria-expanded="false" aria-controls="collapse06">
+                                <i class="bi bi-people text-primary me-2"></i>
+                                {{ 'prog.ac13_06'|trans }}
                             </button>
                         </h2>
                         <div id="collapse06" class="accordion-collapse collapse" data-bs-parent="#competencesAccordion">
                             <div class="accordion-body">
-                                <a href="#" class="btn btn-sm btn-primary">
-                                    <i class="bi bi-file-earmark-pdf"></i> Voir le document de preuve
+                                <a class="btn btn-sm btn-primary" onclick="window.location='{{ path('download_AC13.06') }}'">
+                                    <i class="bi bi-file-earmark-pdf"></i> {{ 'prog.see_proof'|trans }}
                                 </a>
                             </div>
                         </div>

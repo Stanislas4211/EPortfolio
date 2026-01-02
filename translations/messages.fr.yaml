@@ -1,10 +1,209 @@
-home: "Accueil"
-administrer: "Administrer"
-connecter: "Connecter"
-programmer: "Programmer"
-moi: "À propos de moi"
-cv: "CV"
-contact: "Contact"
-inscription: "Inscription"
-french: "Français"
-english: "English"
+#index
+home.title: "Étudiant en BUT Réseaux & Télécommunications"
+
+home.intro: >
+  Je suis actuellement en première année du BUT Réseaux et Télécommunications à l'IUT de Roanne.
+  Passionné par les technologies, l'informatique et la programmation, je développe mes compétences
+  à travers des projets concrets et une formation complète.
+
+home.more_title: "Pour en savoir plus"
+home.more_text: "Découvrez mon parcours complet, mes expériences, mes projets personnels et mes centres d'intérêt."
+
+home.btn_about_title: "À propos de moi"
+home.btn_about_sub: "Mes hobbies et projets"
+
+home.btn_cv_title: "Mon CV"
+home.btn_cv_sub: "Parcours et expériences"
+
+home.btn_contact_title: "Me contacter"
+home.btn_contact_sub: "Comment faire ?"
+
+
+#base
+nav.home: "Maison"
+nav.cv: "Mon CV"
+nav.contact: "Me contacter"
+nav.skills: "Compétences"
+nav.skill_admin: "Administrer"
+nav.skill_connect: "Connecter"
+nav.skill_program: "Programmer"
+
+nav.language_fr: "Français"
+nav.language_en: "Anglais"
+
+#footer
+footer.rights: "Tous droits réservés."
+
+footer.link_home: "Accueil"
+footer.link_legal: "Mentions légales"
+footer.link_privacy: "Confidentialité"
+footer.link_contact: "Contact"
+
+
+#CV
+cv.meta_title: "Mon CV - EPortfolio Favier Stanislas"
+cv.title: "Mon CV"
+cv.subtitle: "Découvrez mon parcours, mes compétences et mes expériences professionnelles."
+
+cv.header_role: "Étudiant en BUT Réseau et Télécommunications"
+cv.license: "Permis B"
+
+cv.profile_title: "Profil"
+cv.profile_text: "Engagé, curieux, autonome et conscient du travail qui m'attend, je sais que je serai un élément moteur au sein de votre entreprise !"
+
+cv.education_title: "Formations"
+cv.education_but: "Première année en formation BUT Réseaux et Télécommunications"
+cv.education_but_place: "IUT de Roanne"
+cv.education_bac: "Baccalauréat mention Assez bien"
+cv.education_brevet: "Brevet des collèges mention très bien"
+cv.education_bia: "Brevet d'initiation aéronautique (BIA)"
+
+cv.exp_title: "Expériences professionnelles"
+cv.exp_archi_title: "Stage d'observation en architecture (1 semaine)"
+cv.exp_archi_item1: "Assistance sur rendu photoréaliste de projets"
+cv.exp_archi_item2: "Réalisation d'un plan sur informatique"
+cv.exp_archi_item3: "Suivi des relations avec les fournisseurs et fabricants de matériaux"
+
+cv.skills_title: "Compétences"
+cv.skills_intro: "J'ai déjà acquis au cours de la formation de nombreuses compétences en plus de celles que je possédais déjà."
+cv.skill_vm: "Montage vidéo"
+cv.skill_algo: "Création d'un algorithme de Python ou en C dans un environnement donné"
+cv.skill_elec: "Fondamentaux en électronique"
+cv.skill_switch: "Création de site web grâce à Symfony"
+cv.skills_plus: "Pour en apprendre plus sur les compétences que j'ai acquises durant ma formation, vous pouvez explorer l'onglet compétences dans la barre de navigation."
+
+cv.download_btn: "Télécharger mon CV en PDF"
+
+
+#moi
+about.meta_title: "À propos de moi - EPortfolio Favier Stanislas"
+about.title: "À propos de moi"
+about.subtitle: "Découvrez mes loisirs, passions, envies et projets."
+
+about.who_title: "Qui suis-je ?"
+about.who_p1: "Je suis Stanislas Favier, étudiant en première année de BUT Réseaux et Télécommunications à l'IUT de Roanne.
+  Passionné par les technologies et l'informatique, j'aime repousser les limites de mes connaissances
+  et découvrir de nouveaux domaines chaque jour."
+about.who_p2: "Au-delà de mes études, je suis quelqu'un de dynamique qui apprécie le travail d'équipe et les défis.
+  Mes loisirs et passions reflètent ma nature curieuse et mon envie constante de progresser."
+
+about.gallery_title: "Mes passions en images"
+
+about.card_sports_text: "Basket-ball, Natation, Musculation"
+
+about.card_it_alt: "Informatique"
+about.card_it_title: "Informatique"
+about.card_it_text: "Codage, Développement, Nouvelles technologies"
+
+about.card_culture_alt: "Culture"
+about.card_culture_title: "Culture"
+about.card_culture_text: "Histoire, Documentaires, Géopolitique"
+
+about.card_projects_alt: "Projets"
+about.card_projects_title: "Projets"
+about.card_projects_text: "Conception, Montage vidéo, Innovations"
+
+about.card_networks_alt: "Réseaux"
+about.card_networks_title: "Réseaux"
+about.card_networks_text: "Administration, Configuration, Sécurité"
+
+about.card_reading_alt: "Lecture"
+about.card_reading_title: "Lecture"
+about.card_reading_text: "Roman, Manga, BD"
+
+about.traits_title: "Qualités personnelles"
+about.trait_curiosity_title: "Curiosité"
+about.trait_curiosity_text: "Toujours en quête de nouvelles connaissances"
+about.trait_autonomy_title: "Autonomie"
+about.trait_autonomy_text: "Capable de travailler indépendamment"
+about.trait_team_title: "Travail d'équipe"
+about.trait_team_text: "Collaboration et communication efficace"
+about.trait_commitment_title: "Engagement"
+about.trait_commitment_text: "Motivé et déterminé dans mes projets"
+
+
+#contacte
+contact.meta_title: "Me Contacter - EPortfolio Favier Stanislas"
+contact.title: "Me Contacter"
+contact.subtitle: "N'hésitez pas à me contacter pour toute question ou opportunité professionnelle."
+
+contact.emails_title: "Mes Emails"
+contact.personal_email_title: "Email personnel"
+contact.student_email_title: "Email étudiant"
+contact.send_email_btn: "Envoyer un email"
+
+contact.phone_title: "Téléphone"
+contact.call_btn: "Appeler"
+
+contact.social_title: "Réseaux sociaux"
+
+
+#administrer
+admin.meta_title: "Administrer - EPortfolio Favier Stanislas"
+admin.title: "Administrer les réseaux et l'Internet"
+admin.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
+
+admin.see_proof: "Voir le document de preuve"
+
+admin.ac11_01: "AC11.01 - Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications"
+admin.ac11_02: "AC11.02 - Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet"
+admin.ac11_03: "AC11.03 - Configurer les fonctions de base du réseau local"
+admin.ac11_04: "AC11.04 - Maîtriser les rôles et les principes fondamentaux des systèmes d’exploitation afin d’interagir avec ceux-ci pour la configuration et l’administration des réseaux et services fournis"
+admin.ac11_05: "AC11.05 - Savoir identifier les dysfonctionnements du réseau local"
+admin.ac11_06: "AC11.06 - Installer un poste client, expliquer la procédure mise en place"
+
+
+#connecter
+connect.meta_title: "Connecter - EPortfolio Favier Stanislas"
+connect.title: "Connecter les systèmes de télécommunication"
+connect.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
+
+connect.see_proof: "Voir le document de preuve"
+
+connect.ac12_01: "AC12.01 - Mesurer et analyser les signaux"
+connect.ac12_02: "AC12.02 - Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement"
+connect.ac12_03: "AC12.03 - Déployer des supports de transmission"
+connect.ac12_04: "AC12.04 - Connecter les systèmes de ToIP"
+connect.ac12_05: "AC12.05 - Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur"
+
+
+
+#programmer
+prog.meta_title: "Programmer - EPortfolio Favier Stanislas"
+prog.title: "Programmer et développer des outils informatiques"
+prog.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
+
+prog.see_proof: "Voir le document de preuve"
+
+prog.ac13_01: "AC13.01 - Utiliser un système informatique et ses outils"
+prog.ac13_02: "AC13.02 - Lire, exécuter, corriger et modifier un programme"
+prog.ac13_03: "AC13.03 - Traduire un algorithme, dans un langage et pour un environnement donné"
+prog.ac13_04: "AC13.04 - Connaître l'architecture et les technologies d'un site Web"
+prog.ac13_05: "AC13.05 - Choisir les mécanismes de gestion de données adaptés au développement de l'outil et argumenter ses choix"
+prog.ac13_06: "AC13.06 - S'intégrer dans un environnement propice au développement et au travail collaboratif"
+
+
+#cv_download
+cv_register.meta_title: "Télécharger mon CV - EPortfolio Favier Stanislas"
+cv_register.title: "Télécharger mon CV"
+cv_register.subtitle: "Complétez le formulaire ci-dessous pour obtenir une copie de mon CV en PDF ou DOCX."
+
+cv_register.firstname: "Prénom"
+cv_register.firstname_required: "Le prénom est requis."
+
+cv_register.lastname: "Nom"
+cv_register.lastname_required: "Le nom est requis."
+
+cv_register.email: "Adresse email"
+cv_register.email_required: "Veuillez entrer une adresse email valide."
+
+cv_register.phone: "Numéro de téléphone"
+cv_register.message: "Message (optionnel)"
+cv_register.message_placeholder: "N'hésitez pas à m'écrire un message..."
+
+cv_register.optional: "optionnel"
+
+cv_register.info_message: "Vos informations personnelles ne seront pas stockées. Le formulaire est uniquement utilisé pour personnaliser votre demande de téléchargement."
+
+cv_register.download_pdf: "Télécharger en PDF"
+cv_register.download_docx: "Télécharger en DOCX"

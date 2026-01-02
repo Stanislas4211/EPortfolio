@@ -1,15 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Mon CV - EPortfolio Favier Stanislas{% endblock %}
+{% block title %}{{ 'cv.meta_title'|trans }}{% endblock %}
 
 {% block body %}
 <div class="py-5">
-    <!-- Hero Section -->
+    <!-- Main Section -->
     <section class="mb-5">
         <div class="card shadow-sm border-0">
             <div class="card-body text-center py-5">
-                <h1 class="display-4 mb-3">Mon CV</h1>
-                <p class="lead text-muted">Découvrez mon parcours, mes compétences et mes expériences professionnelles.</p>
+                <h1 class="display-4 mb-3">{{ 'cv.title'|trans }}</h1>
+                <p class="lead text-muted">{{ 'cv.subtitle'|trans }}</p>
             </div>
         </div>
     </section>
@@ -21,15 +21,15 @@
                 <!-- En-tête CV -->
                 <div class="text-center pb-4 mb-4 border-bottom">
                     <h2 class="h2 mb-2">Favier Stanislas</h2>
-                    <p class="lead text-primary mb-3">Étudiant en BUT Réseau et Télécommunications</p>
+                    <p class="lead text-primary mb-3">{{ 'cv.header_role'|trans }}</p>
                     <div class="row justify-content-center">
                         <div class="col-md-10">
                             <div class="d-flex flex-wrap justify-content-center gap-3 fs-6">
-                                <span class="badge bg-secondary">stan_fav210@gmail.com</span>
+                                <span class="badge bg-secondary">stan.fav42110@gmail.com</span>
                                 <span class="badge bg-secondary">stanislas.favier@etu.univ-st-etienne.fr</span>
                                 <span class="badge bg-secondary">06 44 88 80 27</span>
-                                <span class="badge bg-secondary">Roanne (42300)</span>
-                                <span class="badge bg-secondary">Permis B</span>
+                                <span class="badge bg-secondary">Roanne (42300), France</span>
+                                <span class="badge bg-secondary">{{ 'cv.license'|trans }}</span>
                             </div>
                         </div>
                     </div>
@@ -37,39 +37,39 @@
 
                 <!-- Profil -->
                 <div class="mb-5">
-                    <h3 class="h4 mb-3">Profil</h3>
-                    <p class="text-muted">Engagé, curieux, autonome et conscient du travail qui m'attend, je sais que je serais un élément moteur au sein de votre entreprise!</p>
+                    <h3 class="h4 mb-3">{{ 'cv.profile_title'|trans }}</h3>
+                    <p class="text-muted">{{ 'cv.profile_text'|trans }}</p>
                 </div>
 
                 <!-- Formation -->
                 <div class="mb-5">
-                    <h3 class="h4 mb-4">Formation</h3>
+                    <h3 class="h4 mb-4">{{ 'cv.education_title'|trans }}</h3>
                     
                     <div class="mb-4 ps-3 border-start border-primary border-3">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h4 class="h5 mb-0">Première année en formation BUT Réseau et Télécommunications</h4>
+                            <h4 class="h5 mb-0">{{ 'cv.education_but'|trans }}</h4>
                             <span class="badge bg-info">2025-2026</span>
                         </div>
-                        <p class="text-muted mb-0">IUT de Roanne</p>
+                        <p class="text-muted mb-0">{{ 'cv.education_but_place'|trans }}</p>
                     </div>
 
                     <div class="mb-4 ps-3 border-start border-primary border-3">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h4 class="h5 mb-0">Baccalauréat mention Assez bien</h4>
+                            <h4 class="h5 mb-0">{{ 'cv.education_bac'|trans }}</h4>
                             <span class="badge bg-info">2025</span>
                         </div>
                     </div>
 
                     <div class="mb-4 ps-3 border-start border-primary border-3">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h4 class="h5 mb-0">Brevet des collèges mention très bien</h4>
+                            <h4 class="h5 mb-0">{{ 'cv.education_brevet'|trans }}</h4>
                             <span class="badge bg-info">2021</span>
                         </div>
                     </div>
 
                     <div class="ps-3 border-start border-primary border-3">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h4 class="h5 mb-0">Brevet d'initiation aéronautique (BIA)</h4>
+                            <h4 class="h5 mb-0">{{ 'cv.education_bia'|trans }}</h4>
                             <span class="badge bg-info">2020</span>
                         </div>
                     </div>
@@ -77,38 +77,60 @@
 
                 <!-- Expériences Professionnelles -->
                 <div class="mb-5">
-                    <h3 class="h4 mb-4">Expériences Professionnelles</h3>
+                    <h3 class="h4 mb-4">{{ 'cv.exp_title'|trans }}</h3>
                     
                     <div class="ps-3 border-start border-primary border-3">
                         <div class="d-flex justify-content-between align-items-start mb-2">
-                            <h4 class="h5 mb-0">Stage d'observation en architecture (1 semaine)</h4>
+                            <h4 class="h5 mb-0">{{ 'cv.exp_archi_title'|trans }}</h4>
                             <span class="badge bg-info">06/2022</span>
                         </div>
                         <p class="text-muted mb-3">Atelier Ampère</p>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Assistance sur rendu photoréaliste de projets</li>
-                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Réalisation d'un plan sur informatique</li>
-                            <li><i class="bi bi-check-circle-fill text-primary"></i> Suivi des relations avec les fournisseurs et fabricants de matériaux</li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                {{ 'cv.exp_archi_item1'|trans }}
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                {{ 'cv.exp_archi_item2'|trans }}
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill text-primary"></i>
+                                {{ 'cv.exp_archi_item3'|trans }}
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Compétences -->
                 <div class="mb-5">
-                    <h3 class="h4 mb-4">Compétences</h3>
-                    <p class="text-muted mb-4">J'ai déjà acquis au cours de la formation de nombreuses compétences en plus de celles que je possédais déjà.</p>
+                    <h3 class="h4 mb-4">{{ 'cv.skills_title'|trans }}</h3>
+                    <p class="text-muted mb-4">{{ 'cv.skills_intro'|trans }}</p>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Création de machine virtuel sur Ubuntu (sous linux ou Windows)</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Savoir traduire un algorithme en Python en C dans un environnement donné</li>
-                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary"></i> Fondamentaux en électronique</li>
-                        <li><i class="bi bi-check-circle-fill text-primary"></i> Configuration d'un switch grâce à PuTTY</li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            {{ 'cv.skill_vm'|trans }}
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            {{ 'cv.skill_algo'|trans }}
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            {{ 'cv.skill_elec'|trans }}
+                        </li>
+                        <li>
+                            <i class="bi bi-check-circle-fill text-primary"></i>
+                            {{ 'cv.skill_switch'|trans }}
+                        </li>
                     </ul>
+                    <p class="text-muted mb-4">{{ 'cv.skills_plus'|trans }}</p>
                 </div>
 
                 <!-- Bouton Téléchargement -->
                 <div class="text-center pt-4 border-top">
-                    <a href="#" class="btn btn-primary btn-lg">
-                        <i class="bi bi-download"></i> Télécharger mon CV en PDF
+                    <a href="{{ path('cv_register') }}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-download"></i> {{ 'cv.download_btn'|trans }}
                     </a>
                 </div>
             </div>
