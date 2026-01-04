@@ -144,6 +144,7 @@ admin.title: "Administrer les réseaux et l'Internet"
 admin.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
 
 admin.see_proof: "Voir le document de preuve"
+admin.see_proofAR: "Voir l'analyse Réfléxive"
 
 admin.ac11_01: "AC11.01 - Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications"
 admin.ac11_02: "AC11.02 - Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet"
@@ -159,6 +160,7 @@ connect.title: "Connecter les systèmes de télécommunication"
 connect.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
 
 connect.see_proof: "Voir le document de preuve"
+connect.see_proofAR: "Voir l'analyse Réfléxive"
 
 connect.ac12_01: "AC12.01 - Mesurer et analyser les signaux"
 connect.ac12_02: "AC12.02 - Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement"
@@ -174,6 +176,7 @@ prog.title: "Programmer et développer des outils informatiques"
 prog.subtitle: "Découvrez les différents apprentissages en lien avec cette compétence."
 
 prog.see_proof: "Voir le document de preuve"
+prog.see_proofAR: "Voir l'analyse Réfléxive"
 
 prog.ac13_01: "AC13.01 - Utiliser un système informatique et ses outils"
 prog.ac13_02: "AC13.02 - Lire, exécuter, corriger et modifier un programme"
@@ -206,4 +209,3 @@ cv_register.optional: "optionnel"
 cv_register.info_message: "Vos informations personnelles ne seront pas stockées. Le formulaire est uniquement utilisé pour personnaliser votre demande de téléchargement."
 
 cv_register.download_pdf: "Télécharger en PDF"
-cv_register.download_docx: "Télécharger en DOCX"

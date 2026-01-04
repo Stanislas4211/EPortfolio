@@ -88,6 +88,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+     #[Route('/download/AR11.01', name: 'download_AR11.01')]
+    public function downloadAR1101(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.01.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.01.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC11.02', name: 'download_AC11.02')]
     public function download1102(): BinaryFileResponse
     {
@@ -101,6 +116,21 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+    #[Route('/download/AR11.02', name: 'download_AR11.02')]
+    public function downloadAR1102(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.02.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.02.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
     
     #[Route('/download/AC11.03', name: 'download_AC11.03')]
     public function downloadAC1103(): BinaryFileResponse
@@ -116,6 +146,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR11.03', name: 'download_AR11.03')]
+    public function downloadAR1103(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.03.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.03.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC11.04', name: 'download_AC11.04')]
     public function download1104(): BinaryFileResponse
     {
@@ -129,6 +174,21 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+    #[Route('/download/AR11.04', name: 'download_AR11.04')]
+    public function downloadAR1104(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.04.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.04.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
 
     #[Route('/download/AC11.05', name: 'download_AC11.05')]
     public function download1105(): BinaryFileResponse
@@ -144,6 +204,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR11.05', name: 'download_AR11.05')]
+    public function downloadAR1105(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.05.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.05.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC11.06', name: 'download_AC11.06')]
     public function download1106(): BinaryFileResponse
     {
@@ -153,6 +228,20 @@ final class StanController extends AbstractController
         $response->setContentDisposition(
             ResponseHeaderBag::DISPOSITION_ATTACHMENT,
             'AC11.06.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+    #[Route('/download/AR11.06', name: 'download_AR11.06')]
+    public function downloadAR1106(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR11.06.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR11.06.pdf' // nom du fichier téléchargé
         );
 
         return $response;
@@ -177,6 +266,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR12.01', name: 'download_AR12.01')]
+    public function downloadAR1201(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR12.01.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR12.01.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC12.02', name: 'download_AC12.02')]
     public function download1202(): BinaryFileResponse
     {
@@ -190,6 +294,21 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+    #[Route('/download/AR12.02', name: 'download_AR12.02')]
+    public function downloadAR1202(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR12.02.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR12.02.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
     
     #[Route('/download/AC12.03', name: 'download_AC12.03')]
     public function downloadAC1203(): BinaryFileResponse
@@ -205,6 +324,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR12.03', name: 'download_AR12.03')]
+    public function downloadAR1203(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR12.03.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR12.03.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC12.04', name: 'download_AC12.04')]
     public function download1204(): BinaryFileResponse
     {
@@ -219,6 +353,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR12.04', name: 'download_AR12.04')]
+    public function downloadAR1204(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR12.04.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR12.04.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC12.05', name: 'download_AC12.05')]
     public function download1205(): BinaryFileResponse
     {
@@ -228,6 +377,20 @@ final class StanController extends AbstractController
         $response->setContentDisposition(
             ResponseHeaderBag::DISPOSITION_ATTACHMENT,
             'AC12.05.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+    #[Route('/download/AR12.05', name: 'download_AR12.05')]
+    public function downloadAR1205(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR12.05.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR12.05.pdf' // nom du fichier téléchargé
         );
 
         return $response;
@@ -252,6 +415,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AR13.01', name: 'download_AR13.01')]
+    public function downloadAR1301(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR13.01.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR13.01.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC13.02', name: 'download_AC13.02')]
     public function download1302(): BinaryFileResponse
     {
@@ -265,7 +443,22 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+    #[Route('/download/AR13.01', name: 'download_AR13.02')]
+    public function downloadAR1302(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR13.02.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR13.02.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
     
+
     #[Route('/download/AC13.03', name: 'download_AC13.03')]
     public function downloadAC1303(): BinaryFileResponse
     {
@@ -279,6 +472,22 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+    #[Route('/download/AR13.03', name: 'download_AR13.03')]
+    public function downloadAR1303(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR13.03.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR13.03.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
 
     #[Route('/download/AC13.04', name: 'download_AC13.04')]
     public function download1304(): BinaryFileResponse
@@ -294,6 +503,21 @@ final class StanController extends AbstractController
         return $response;
     }
 
+     #[Route('/download/AR13.04', name: 'download_AR13.04')]
+    public function downloadAR1304(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR13.04.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR13.04.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
+
     #[Route('/download/AC13.05', name: 'download_AC13.05')]
     public function download1305(): BinaryFileResponse
     {
@@ -307,6 +531,21 @@ final class StanController extends AbstractController
 
         return $response;
     }
+
+     #[Route('/download/AR13.05', name: 'download_AR13.05')]
+    public function downloadAR1305(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR13.05.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR13.05.pdf' // nom du fichier téléchargé
+        );
+
+        return $response;
+    }
+
 
     #[Route('/download/AC13.06', name: 'download_AC13.06')]
     public function download1306(): BinaryFileResponse

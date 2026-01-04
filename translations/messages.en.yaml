@@ -82,11 +82,9 @@ about.title: "About me"
 about.subtitle: "Discover my hobbies, passions, goals and projects."
 
 about.who_title: "Who am I?"
-about.who_p1: >
-  My name is Stanislas Favier, and I am a first-year student studying for a Bachelor's degree in Networks and Telecommunications at the University Institute of Technology in Roanne. 
-  I am passionate about technology and IT, and I enjoy pushing the boundaries of my knowledge and discovering new areas every day.
-about.who_p2: >
-  Beyond my studies, I am dynamic and enjoy teamwork and challenges. My hobbies and passions reflect my curiosity and my constant desire to improve.
+about.who_p1: "My name is Stanislas Favier, and I am a first-year student studying for a Bachelor's degree in Networks and Telecommunications at the University Institute of Technology in Roanne. 
+  I am passionate about technology and computer science, and I enjoy pushing the boundaries of my knowledge and discovering new areas every day."
+about.who_p2: "Beyond my studies, I am dynamic and enjoy teamwork and challenges. My hobbies and passions reflect my curiosity and my constant desire to improve."
 
 about.gallery_title: "My passions in pictures"
 
@@ -145,6 +143,7 @@ admin.title: "Administer networks and the Internet"
 admin.subtitle: "Discover the different learning outcomes related to this skill."
 
 admin.see_proof: "View evidence document"
+admin.see_proofAR: "View Reflective analysis"
 
 admin.ac11_01: "AC11.01 - Master the fundamental laws of electricity in order to work on network and telecommunications equipment"
 admin.ac11_02: "AC11.02 - Understand the architecture and foundations of digital systems, principles of information encoding, communications and the Internet"
@@ -160,6 +159,7 @@ connect.title: "Connect telecommunication systems"
 connect.subtitle: "Discover the different learning outcomes related to this skill."
 
 connect.see_proof: "View evidence document"
+connect.see_proofAR: "View Reflective analysis"
 
 connect.ac12_01: "AC12.01 - Measure and analyse signals"
 connect.ac12_02: "AC12.02 - Characterise basic transmission systems and discover the mathematical modelling of how they work"
@@ -175,6 +175,7 @@ prog.title: "Program and develop computer tools"
 prog.subtitle: "Discover the different learning outcomes related to this skill."
 
 prog.see_proof: "View evidence document"
+prog.see_proofAR: "View Reflective analysis"
 
 prog.ac13_01: "AC13.01 - Use a computer system and its tools"
 prog.ac13_02: "AC13.02 - Read, run, debug and modify a program"
@@ -207,4 +208,3 @@ cv_register.optional: "optional"
 cv_register.info_message: "Your personal information will not be stored. The form is only used to personalize your download request."
 
 cv_register.download_pdf: "Download as PDF"
-cv_register.download_docx: "Download as DOCX"
