@@ -248,7 +248,35 @@ final class StanController extends AbstractController
     }
 
 
+    //SAE 1.02
 
+    #[Route('/download/AR_SAE1.02', name: 'download_AR_SAE1_02')]
+    public function downloadARSAE102(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR_SAE1.02.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR_SAE1.02.pdf'
+        );
+
+        return $response;
+    }
+
+    #[Route('/download/AR_SAE1.02', name: 'download_AC_SAE1_02')]
+    public function downloadACSAE102(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR_SAE1.02.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR_SAE1.02.pdf'
+        );
+
+        return $response;
+    }
 
     // Téléchargement de AC12 -->
 
@@ -396,7 +424,33 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AC_SAE2.03', name: 'download_AC_SAE2_03')]
+    public function downloadACSAE203(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AC_SAE2.03.pdf';
 
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AC_SAE2.03.pdf'
+        );
+
+        return $response;
+    }
+
+    #[Route('/download/AR_SAE2.03', name: 'download_AR_SAE2_03')]
+    public function downloadARSAE203(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR_SAE2.03.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR_SAE2.03.pdf'
+        );
+
+        return $response;
+    }
 
 
     // Téléchargement de AC13 --> 
@@ -561,7 +615,33 @@ final class StanController extends AbstractController
         return $response;
     }
 
+    #[Route('/download/AC_SAE1.03', name: 'download_AC_SAE1_03')]
+    public function downloadACSAE103(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AC_SAE1.03.pdf';
 
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AC_SAE1.03.pdf'
+        );
+
+        return $response;
+    }
+
+    #[Route('/download/AR_SAE1.03', name: 'download_AR_SAE1_03')]
+    public function downloadARSAE103(): BinaryFileResponse
+    {
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/AR_SAE1.03.pdf';
+
+        $response = new BinaryFileResponse($filePath);
+        $response->setContentDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            'AR_SAE1.03.pdf'
+        );
+
+        return $response;
+    }
 
 
     //Téléchargement CV
